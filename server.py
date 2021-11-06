@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 
 @app.route("/<city><state>", methods=['GET'])
-def get_image(city, state):
+def get_info(city, state):
     return jsonify(yelp_info(city, state))
 
 
